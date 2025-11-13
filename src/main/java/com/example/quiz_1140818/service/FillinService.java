@@ -432,7 +432,7 @@ public class FillinService {
 				throw e;
 			}
 		}
-		// 將每一題中每個編號的選項和次數設定回 QuestionCountVo
+		/* 將每一題中每個編號的選項和次數設定回 QuestionCountVo */
 		List<QuestionCountVo> voList = setAndGetQuestionCountVoList(map, voMap);
 		Quiz quiz = quizDao.getQuizById(quizId);
 		StatisticVo statisticVo = new StatisticVo(quiz, voList);
