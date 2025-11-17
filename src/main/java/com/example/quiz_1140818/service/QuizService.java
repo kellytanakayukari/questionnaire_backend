@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -26,6 +28,9 @@ import jakarta.transaction.Transactional;
 
 @Service
 public class QuizService {
+	
+	// org.slf4j (下面的那個) 新增至日誌訊息
+	private Logger logger = LoggerFactory.getLogger(getClass());
 
 	// json跟java物件的轉換
 	private ObjectMapper mapper = new ObjectMapper();
@@ -81,6 +86,7 @@ public class QuizService {
 			}
 
 		} catch (Exception e) {
+			logger.error(e.getMessage());
 			throw e;
 		}
 

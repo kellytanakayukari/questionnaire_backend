@@ -9,6 +9,7 @@ public class BasicReq {
 
 	/**
 	 * @NotBlank(message = "Account format error!!")<br>
+	 * ConstantsMessage 參數檢查only~
 	 * @NotBlank: 表示限制字串 account 不能是 null 或 空字串 或 全空白字串<br>
 	 * message 後面的字串表示當違反 @NotBlank 的限制時會得到的提示訊息
 	 * @Pattern 代表可使用正規表達式的限制

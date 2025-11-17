@@ -3,6 +3,7 @@ package com.example.quiz_1140818.constants;
 public class ConstantsMessage {
 	
 	/**
+	 * 參數檢查only~
 	 * 純字串的訊息可放這
 	 * final: 將參數定義為常數(固定不變的數)，常數必須要有預設值，參數的命名規則是全大寫
 	 *       ，用底線串接不同的字<br>
